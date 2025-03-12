@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Métodos de Evaluación</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Usabilidad Web</h1>
+        <nav>
+            <ul>
+                <li><a href="usabilidad.html">Usabilidad</a></li>
+                <li><a href="accesibilidad.html">Usabilidad y Accesibilidad</a></li>
+                <li><a href="ingenieria.html">Ingeniería de Usabilidad</a></li>
+                <li><a href="ciclo.html">Ciclo de Vida</a></li>
+                <li><a href="metodos.html">Métodos de Evaluación</a></li>
+                <li><a href="diseno.html">Diseño Centrado en el Usuario</a></li>
+                <li><a href="referencias.html">Referencias</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="metodos">
+            <h2>Métodos de evaluación de usabilidad</h2>
+            <p>...contenido...</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Usabilidad Web</p>
+    </footer>
+    <button id="backToTopBtn" title="Volver arriba">↑</button>
+    <script>
+        // Obtener el botón
+        let mybutton = document.getElementById("backToTopBtn");
+
+        // Mostrar el botón cuando el usuario se desplaza hacia abajo 20px desde la parte superior del documento
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // Cuando el usuario hace clic en el botón, vuelve a la parte superior del documento
+        mybutton.onclick = function() {
+            document.body.scrollTop = 0; // Para Safari
+            document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
+        }
+    </script>
+</body>
+</html>

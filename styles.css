@@ -1,0 +1,94 @@
+body {
+    background-image: url("img/Ruido.png");
+    background-repeat: no-repeat;
+    /*background-position: right;*/
+    background-size: cover; /* Ajusta la imagen de fondo para cubrir toda la pantalla */
+    font-family: 'Roboto', Arial, sans-serif; /* Cambia la fuente a Roboto para un look más moderno */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Cambia el color del texto a un gris oscuro para mejor legibilidad */
+}
+
+header {
+    background: #444; /* Cambia el color de fondo a un gris más claro */
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Añade una sombra para dar profundidad */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Usa flexbox para una mejor alineación */
+    justify-content: center; /* Centra los elementos del menú */
+}
+
+nav ul li {
+    margin: 0 15px; /* Aumenta el margen entre los elementos del menú */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold; /* Hace el texto del menú más destacado */
+    transition: color 0.3s; /* Añade una transición suave al cambiar el color */
+}
+
+nav ul li a:hover {
+    color: #ff6347; /* Cambia el color al pasar el ratón por encima */
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px; /* Limita el ancho máximo del contenido principal */
+    margin: 0 auto; /* Centra el contenido principal */
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #f9f9f9; /* Añade un fondo claro a las secciones */
+    border-radius: 8px; /* Redondea las esquinas de las secciones */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Añade una sombra para dar profundidad */
+}
+
+footer {
+    background: #444; /* Cambia el color de fondo a un gris más claro */
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Añade una sombra para dar profundidad */
+    padding-bottom: 60px; /* Añade espacio para el botón */
+}
+
+#backToTopBtn {
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Fijo en la pantalla */
+    bottom: 20px; /* 20px desde la parte inferior */
+    right: 30px; /* 30px desde la derecha */
+    z-index: 99; /* Asegúrate de que esté por encima de otros elementos */
+    border: none; /* Sin borde */
+    outline: none; /* Sin contorno */
+    background-color: white; /* Color de fondo */
+    color: #444; /* Color del texto */
+    cursor: pointer; /* Cursor de puntero */
+    padding: 15px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    font-size: 18px; /* Tamaño de la fuente */
+}
+
+#backToTopBtn:hover {
+    background-color: #555; /* Color de fondo al pasar el ratón */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usabilidad</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Usabilidad Web</h1>
+        <nav>
+            <ul>
+                <li><a href="usabilidad.html">Usabilidad</a></li>
+                <li><a href="accesibilidad.html">Usabilidad y Accesibilidad</a></li>
+                <li><a href="ingenieria.html">Ingeniería de Usabilidad</a></li>
+                <li><a href="ciclo.html">Ciclo de Vida</a></li>
+                <li><a href="metodos.html">Métodos de Evaluación</a></li>
+                <li><a href="diseno.html">Diseño Centrado en el Usuario</a></li>
+                <li><a href="referencias.html">Referencias</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="usabilidad">
+            <h1>Usabilidad y Accesibilidad</h1>
+            
+            <p>
+                Según la ISO 9126 la usabilidad es la capacidad de un producto de software de ser comprendido, aprendido, usado y ser atractivo para el usuario, en condiciones específicas de uso.
+                Es decir, estaríamos hablando de cómo debería ser el diseño de una página web, desde la página de inicio, la jerarquía interior de sus páginas, los formularios, las imágenes, el formato del texto, los colores y tamaños de este, su visibilidad en otros dispositivos (móvil, Tablet…), etcétera.
+            </p>
+            <img src="img/usabilidad.jpg" alt="Usabilidad" style="width:100%;max-width:600px;margin:20px 0;">
+            <h2>Usabilidad en la Arquitectura de la Información</h2>
+            <p>
+                La arquitectura de la información juega un papel crucial en la usabilidad al determinar cómo se organiza, etiqueta y presenta la información. Una buena arquitectura de la información facilita que los usuarios encuentren lo que necesitan, comprendan la información y completen sus tareas de manera eficiente.
+            </p>
+            <img src="img/arquitectura_informacion.jpg" alt="Arquitectura de la Información" style="width:100%;max-width:600px;margin:20px 0;">
+            <h2>Definición de Accesibilidad</h2>
+            <p>
+                La accesibilidad se refiere a la práctica de diseñar sistemas de información que puedan ser utilizados por todas las personas, incluidas aquellas con discapacidades. Implica eliminar las barreras que impiden que las personas con discapacidades accedan y utilicen la información. Esto incluye considerar una amplia gama de discapacidades, como discapacidades visuales, auditivas, motoras y cognitivas.
+            </p>
+            <img src="img/accesibilidad.jpg" alt="Accesibilidad" style="width:100%;max-width:600px;margin:20px 0;">
+            <h2>Accesibilidad en la Arquitectura de la Información</h2>
+            <p>
+                La arquitectura de la información debe considerar la accesibilidad desde el principio del proceso de diseño. Esto implica utilizar estándares de accesibilidad, como las Pautas de Accesibilidad al Contenido Web (WCAG), y garantizar que la estructura de la información sea compatible con tecnologías de asistencia, como lectores de pantalla. Una buena arquitectura de la información, en conjunto a un buen diseño, facilita que usuarios con discapacidad puedan acceder a la información y navegar por los sistemas de información.
+            </p>
+            <h2>Relación entre Usabilidad y Accesibilidad</h2>
+            <p>
+                Aunque son conceptos distintos, la usabilidad y la accesibilidad están estrechamente relacionadas. Un sistema de información accesible suele ser más usable para todos los usuarios, no solo para aquellos con discapacidades. Ambas disciplinas comparten el objetivo de crear experiencias de usuario positivas y efectivas.
+            </p>
+            <h2>Resumen</h2>
+            <p>
+                En resumen, la arquitectura de la información desempeña un papel fundamental en la creación de sistemas de información usables y accesibles. Al organizar y estructurar la información de manera efectiva, los arquitectos de la información pueden ayudar a garantizar que todos los usuarios puedan acceder y utilizar la información que necesitan.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Usabilidad Web</p>
+    </footer>
+    <button id="backToTopBtn" title="Volver arriba">↑</button>
+    <script>
+        // Obtener el botón
+        let mybutton = document.getElementById("backToTopBtn");
+
+        // Mostrar el botón cuando el usuario se desplaza hacia abajo 20px desde la parte superior del documento
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // Cuando el usuario hace clic en el botón, vuelve a la parte superior del documento
+        mybutton.onclick = function() {
+            document.body.scrollTop = 0; // Para Safari
+            document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
+        }
+    </script>
+</body>
+</html>
