@@ -1,5 +1,9 @@
 body {
-    background-image: url("img/Ruido.png");
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 20%, rgba(102,102,107,1) 32%, rgba(166,168,168,1) 100%);
+
+    /*background-color:whitesmoke  ; /* Cambia el color de fondo a un gris más oscuro */
+    /*background-image: url("img/Ruido.png");*/ /* Añade una imagen de fondo */
     background-repeat: no-repeat;
     /*background-position: right;*/
     background-size: cover; /* Ajusta la imagen de fondo para cubrir toda la pantalla */
@@ -12,7 +16,7 @@ body {
 
 header {
     background: #444; /* Cambia el color de fondo a un gris más claro */
-    color: #fff;
+    color: darkgoldenrod;
     padding: 1rem 0;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Añade una sombra para dar profundidad */
@@ -30,13 +34,14 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: goldenrod;
     text-decoration: none;
     font-weight: bold; /* Hace el texto del menú más destacado */
     transition: color 0.3s; /* Añade una transición suave al cambiar el color */
 }
 
 nav ul li a:hover {
+    /*font-size: 1.2em; /* Agranda el texto al pasar el ratón por encima */
     color: #ff6347; /* Cambia el color al pasar el ratón por encima */
 }
 
@@ -74,7 +79,7 @@ footer {
     z-index: 99; /* Asegúrate de que esté por encima de otros elementos */
     border: none; /* Sin borde */
     outline: none; /* Sin contorno */
-    background-color: white; /* Color de fondo */
+    background-color:goldenrod; /* Color de fondo */
     color: #444; /* Color del texto */
     cursor: pointer; /* Cursor de puntero */
     padding: 15px; /* Espaciado interno */
@@ -83,7 +88,7 @@ footer {
 }
 
 #backToTopBtn:hover {
-    background-color: #555; /* Color de fondo al pasar el ratón */
+    background-color: gainsboro; /* Color de fondo al pasar el ratón */
 }
 
 img {
@@ -92,3 +97,27 @@ img {
     display: block;
     margin: 20px auto;
 }
+
+.parrafo:first-letter{
+    font-size:40px;
+    float:calc( 10% + 10px);
+    line-height: 0;
+    font-weight: bold;  
+    color:grey  
+  }
+
+.intermitente{
+    border: 1px solid black;
+    padding: 20px 20px;
+    box-shadow: 0px 0px 20px;
+    animation: infinite resplandorAnimation 2s;    
+    }
+@keyframes resplandorAnimation {
+    0%,100%{
+      box-shadow: 0px 0px 20px;
+    }
+    50%{
+    box-shadow: 0px 0px 0px;    
+    }
+  
+  }
